@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+  color: brown;
+  padding: 10px;
+  display: inline-flex;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  overflow: auto;
+}
