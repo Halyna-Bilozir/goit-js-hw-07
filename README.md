@@ -1,6 +1,6 @@
 # goit-js-hw-07
-Репозиторій для виконання ДЗ , Модуль 7
 
+Репозиторій для виконання ДЗ , Модуль 7
 
 Критерии приема
 Создан репозиторий goit-js-hw-07
@@ -26,6 +26,7 @@
       <li>Лошадь</li>
       <li>Попугай</li>
     </ul>
+
   </li>
   <li class="item">
     <h2>Продукты</h2>
@@ -35,6 +36,7 @@
       <li>Петрушка</li>
       <li>Творог</li>
     </ul>
+
   </li>
   <li class="item">
     <h2>Технологии</h2>
@@ -46,6 +48,7 @@
       <li>React</li>
       <li>Node</li>
     </ul>
+
   </li>
 </ul>
 Напиши скрипт, который выполнит следующие операции.
@@ -58,6 +61,7 @@
 
 Категория: Животные
 Количество элементов: 4
+
 Задание 2
 В HTML есть пустой список ul#ingredients.
 
@@ -65,12 +69,12 @@
 В JS есть массив строк.
 
 const ingredients = [
-  'Картошка',
-  'Грибы',
-  'Чеснок',
-  'Помидоры',
-  'Зелень',
-  'Приправы',
+'Картошка',
+'Грибы',
+'Чеснок',
+'Помидоры',
+'Зелень',
+'Приправы',
 ];
 Напиши скрипт, который для каждого элемента массива ingredients создаст отдельный li, после чего вставит все li за одну операцию в список ul.ingredients. Для создания DOM-узлов используй document.createElement().
 
@@ -85,21 +89,21 @@ const ingredients = [
 Все элементы галереи должны добавляться в DOM за одну операцию вставки.
 Добавь минимальное оформление галереи флексбоксами или гридами через css-классы.
 const images = [
-  {
-    url:
-      'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    alt: 'White and Black Long Fur Cat',
-  },
-  {
-    url:
-      'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
-  },
-  {
-    url:
-      'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    alt: 'Group of Horses Running',
-  },
+{
+url:
+'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+alt: 'White and Black Long Fur Cat',
+},
+{
+url:
+'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
+},
+{
+url:
+'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+alt: 'Group of Horses Running',
+},
 ];
 Задание 4
 Счетчик состоит из спана и кнопок, которые должны увеличивать и уменьшать значение счетчика на 1.
@@ -107,6 +111,7 @@ const images = [
 Создай переменную counterValue в которой будет хранится текущее значение счетчика.
 Создай функции increment и decrement для увеличения и уменьшения значения счетчика
 Добавь слушатели кликов на кнопки, вызовы функций и обновление интерфейса
+
 <div id="counter">
   <button type="button" data-action="decrement">-1</button>
   <span id="value">0</span>
@@ -131,15 +136,15 @@ const images = [
 Для добавления стилей, используй CSS-классы valid и invalid.
 
 #validation-input {
-  border: 3px solid #bdbdbd;
+border: 3px solid #bdbdbd;
 }
 
 #validation-input.valid {
-  border-color: #4caf50;
+border-color: #4caf50;
 }
 
 #validation-input.invalid {
-  border-color: #f44336;
+border-color: #f44336;
 }
 Задание 7
 Напиши скрипт, который реагирует на изменение значения input#font-size-control (событие input) и изменяет инлайн-стиль span#text обновляя свойство font-size. В результате при перетаскивании ползунка будет меняться размер текста.
