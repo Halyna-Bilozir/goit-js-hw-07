@@ -11,22 +11,37 @@
 //   <button type="button" data-action="increment">+1</button>
 // </div> */}
 
+// 1. Створити змінні з розмітки
+// 2. Створити змінну для початку відліку 0 in counter для текучого значення лічильника
+// 3. Створити функції для спадання і зростання лічильника, віднімати і додавати одиницю
+// 4. Додати слухачі подій на спадання і зростання значень лічильника
+// 5. Викликати функції
 
-const div = document.createElement('div');
+const refs = {
+    counterValue: document.querySelector('#value'),
+    btnDecrement: document.querySelector('[data-action="decrement"]'),
+    btnIncrement: document.querySelector('[data-action="increment"]'),
+};
 
-const button = document.createElement('button');
-button.type = 'button';
-button.dataset(action = 'decrement');
-button.textContent = '-1';
+const counter = {
+    counterValueNumber: 0,
+    btnDecrementEvent(){
+        this.counterValueNumber -= 1;
+    },
+    btnIncrementEvent(){
+        this.counterValueNumber += 1;
+    },
+};
 
-const span = document.createElement('span');
-span.id = 'value';
-span.textContent = '0';
 
-const button = document.createElement('button');
-button.type = 'button';
-button.dataset(action = 'increment');
-button.textContent = '+1';
+refs.btnDecrement.addEventListener('click', () => {
+    counter.btnDecrementEvent();
+    refs.counterValue.textContent = counter.counterValueNumber;
+});
 
-const counterValue = 0;
+refs.btnIncrement.addEventListener('click', () => {
+    counter.btnIncrementEvent();
+    refs.counterValue.textContent = counter.counterValueNumber;
+});
+
 
