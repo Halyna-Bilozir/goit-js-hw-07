@@ -18,8 +18,9 @@ const refs = {
 refs.nameInput.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
-    event.currentTarget.value === ''
-    ? event.currentTarget.value = 'незнакомец'
-    : refs.nameOutput.textContent = event.currentTarget.value;
+    event.currentTarget.value !== ''
+        ? refs.nameOutput.textContent = event.currentTarget.value
+        : refs.nameOutput.textContent = 'незнакомец'
+    
 };
 
