@@ -11,12 +11,12 @@
 // 3. Створюємо функцію, котра буде слідкувати за зміною повзунка на інпуті
 
 const refs = {
-    input: document.querySelector('#font-size-control'),
-    outputText: document.querySelector('#text'),
+    input: document.getElementById('font-size-control'),
+    outputText: document.getElementById('text'),
 }
 
 refs.input.addEventListener('input', onInputChangeInlineStyle);
 
 function onInputChangeInlineStyle(event) {
-    refs.outputText.style.fontsize = `${event.currentTarget.value}px`;
+    refs.outputText.style.fontSize = `${event.currentTarget.value}px`;
 }
