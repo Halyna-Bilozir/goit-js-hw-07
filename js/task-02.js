@@ -5,10 +5,9 @@
 
 // 1. Створити змінну за допомогою querySelector для елементу body
 // 2. Пройтися по масиву ingredients і створити тег li на кожен елемент, вивести масив.
-// 3. Створити змінну для створення нового елементу списку інгредієнтів ul
-// 4. Дати списку ім'я класу ingredients
+// 3. Створити змінну за допомогою querySelector для створення нового елементу списку інгредієнтів ul
 // 5. Додати всі елементи-інгредієнти в список
-// 6. Добавити тег ul в розмітку (разом з усіма дочірніми елементами) після першого елементу в body
+// 6. Добавити теги li в розмітку в ul
 
 
 
@@ -30,8 +29,7 @@ const liElement = ingredients.map(ingredient => {
 });
 console.log(liElement);
 
-const listIngredients = document.createElement('ul');
-listIngredients.className = 'ingredients';
+const listIngredients = document.querySelector('ul.ingredients');
 listIngredients.append(...liElement);
 
 body.insertBefore(listIngredients, body.firstElementChild.nextSibling);
